@@ -1,13 +1,13 @@
-window.onload = function () {
-  var canvas = document.getElementById('myGame');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  var ctx = canvas.getContext('2d');
-  
-  // Build a game! (Easier said than done)
-  ctx.font = '12pt Helvetica';
-  ctx.fillStyle = 'red';
+var stage = new createjs.Stage("myGame");
+stage.canvas.width = window.innerWidth;
+stage.canvas.height = window.innerHeight;
 
-  var str = 'Hello World!';
-  ctx.fillText(str, (canvas.width/2) - 4*str.length, canvas.height/2);
-}
+var ball = new createjs.Shape();
+ball.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 5);
+ball.x = stage.canvas.width/2 - 5;
+ball.y = stage.canvas.height/2 - 5;
+stage.addChild(ball);
+
+createjs.Ticker.addEventListener("tick", function (dt, paused) {
+  stage.update();
+});
