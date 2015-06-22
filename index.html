@@ -1,80 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calamari</title>
-
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap/css/custom.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+    <title>Hello Breakout</title>
   </head>
   <body>
-    <div style="height: 80px; content: ''">
-      <button class="btn btn-default btn-sm" id="backbutton"><i class="glyphicon glyphicon-chevron-left"></i>    Back</button>
-      <button class="btn btn-default btn-sm" id="forwardbutton">Forward    <i class="glyphicon glyphicon-chevron-right"></i></button>
-      <div class="btn-group right">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="username"></span>   <span class="glyphicon glyphicon-chevron-down"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#" id="fgme">Forget Me</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3 col-md-offset-9 3 out hidden">
-        <h1 class="3h1"></h1>
-        <h4 class="text-muted"><small><em class="3h4"></em></small></h4>
-        <br/>
-        <ul class="list-group events">
-        </ul>
-      </div>
-
-      <div class="col-md-3 col-md-offset-8 fade-in 2 out">
-        <h1>Yesterday's Commits</h1>
-        <h4 class="text-muted"><small><em>All new commits from yesterday on your favorite repositories.</em></small></h4>
-        <br/>
-        <div class="form-group">
-          <input type="text" class="form-control" id="s" placeholder="Search Events">
-          <div class="alert alert-info" role="alert" id="help">To run the search, click out of the search box!</div>
-        </div>
-        <ul class="list-group repos">
-        </ul>
-      </div>
-      <div class="col-md-3 col-md-offset-4 fade-in shadow-box 1">
-        <h1>What's your username?</h1>
-        <h4 class="text-muted"><small><em>First, you have to tell us your github username, so we know where to get the events from!</em></small></h4>
-        <br/>
-        <div class="form-horizontal">
-          <div class="form-group">
-            <div class="col-sm-10">
-              <input type="username" class="form-control" id="inputEmail3" placeholder="Username" autofocus>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-success" id="SI">Go!</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://rawgit.com/showdownjs/showdown/master/compressed/Showdown.min.js"></script>
-    <script src="js/poly.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
