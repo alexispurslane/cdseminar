@@ -1,7 +1,7 @@
 window.onload = function () {
   var canvas = document.getElementById('myGame');
-  canvas.width = document.body.width;
-  canvas.height = document.body.height;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
   var ctx = canvas.getContext('2d');
   
   // Build a game! (Easier said than done)
